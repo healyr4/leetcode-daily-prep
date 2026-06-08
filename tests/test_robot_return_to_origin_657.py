@@ -1,4 +1,4 @@
-from robot_return_to_origin_657 import Solution
+from src.robot_return_to_origin_657 import Solution
 
 solution = Solution()
 
