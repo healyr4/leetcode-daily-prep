@@ -1,9 +1,11 @@
 from collections import Counter
 
+
 class Solution:
     def judge_circle(self, moves: str) -> bool:
         counts = Counter(moves)
         return counts["U"] == counts["D"] and counts["L"] == counts["R"]
+
 
 if __name__ == "__main__":
     solution = Solution()
@@ -16,8 +18,3 @@ if __name__ == "__main__":
     assert solution.judge_circle("R") is False
 
     print("All tests have passed")
-
-
-
-
-
