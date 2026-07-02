@@ -17,8 +17,7 @@ def get_totals_by_account_id(
         account_id = transaction.account_id
 
         totals_by_account[account_id] = (
-            totals_by_account.get(account_id, Decimal("0"))
-            + transaction.amount
+            totals_by_account.get(account_id, Decimal("0")) + transaction.amount
         )
 
     return totals_by_account
